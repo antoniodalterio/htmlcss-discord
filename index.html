@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Struttura Discord</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome -->
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- my css -->
 </head>
 
-<body class="debug ">
+<body>
     <!-- parte header  -->
     <header>
         <!-- Header top -->
-        <div class="header-top container-header debug">
-            <div class="logo debug"><img src="img/logo.svg" alt=""></div>
-            <div class="link debug">
+        <div class="header-top container-header">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <div class="link">
                 <ul class="container-menu">
                     <li><a href="" class="nav">Scarica</a></li>
                     <li><a href="" class="nav">Perchè Discord</a></li>
@@ -49,9 +55,9 @@
     <main>
         <!-- prima sezione con riquadri  -->
         <section>
-            <div class="container-one debug">
-                <div class="riquadro debug"></div>
-                <div class="riquadro-due debug">
+            <div class="container-one">
+                <div class="riquadro "></div>
+                <div class="riquadro-due ">
                     <h2>Un luogo a invito <br>
                         cont tutto lo <br>
                         spazio <br>
@@ -67,8 +73,8 @@
         <!-- prima sezione con riquadri  -->
         <!-- seconda sezione con riquadri  -->
         <section class="sezione-2">
-            <div class="container-two debug">
-                <div class="riquadro-quattro debug">
+            <div class="container-two">
+                <div class="riquadro-quattro">
                     <h2>Dove trovarsi è <br>
                         facile
                     </h2>
@@ -83,7 +89,7 @@
         <!-- seconda sezione con riquadri  -->
         <!-- terza sezione con riquadri  -->
         <section>
-            <div class="container-one debug">
+            <div class="container-one">
                 <div class="img-3 debug"></div>
                 <div class="riquadro-due debug">
                     <h2>Da pochi a un <br>
@@ -102,7 +108,7 @@
 
         <!-- quarta sezione -->
         <section class="sezione-2">
-            <div class="green-screen debug box">
+            <div class="green-screen  box">
                 <h2>Tecnologia affidabile per tenersi in contatto</h2>
                 <p>video e audio a bassa latenza sentire come se foste tutti nella stessa stanza. fai ciao in video,
                     guarda
@@ -110,7 +116,9 @@
                     schermo
                 </p>
                 <img src="img/item4-big.svg" alt="immagine Discord">
-                <h3>Pronto a iniziare la tua avventura?</h3>
+                <div id="stars">
+                    <h3>Pronto a iniziare la tua avventura?</h3>
+                </div>
                 <a href="" class="button-link blue"><span id="arrow">&#129071;</span>Scarica per Mac</a>
 
             </div>
@@ -120,17 +128,72 @@
 
 
     <!-- Parte Footer divisa in 2 sezioni -->
-    <footer class="debug">
+    <footer>
         <!-- Prima sezione footer -->
         <section class="sezione-footer">
             <!-- Colonne -->
             <div class="box-footer container-footer">
-                <div class="red-box debug"></div>
-                <div class="green-box debug">
-                    <div class="col-green"></div>
-                    <div class="col-green"></div>
-                    <div class="col-green"></div>
-                    <div class="col-green"></div>
+                <div class="red-box">
+                    <ul>
+                        <h3>Il tuo posto per <br>
+                            parlare
+                        </h3>
+                        <li class="lingua"> <span><img src="img/ita.png" alt="" id="lingua"></span>Italiano</li>
+                        <li><i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </li>
+                        <div>
+
+                        </div>
+                </div>
+                <div class="green-box">
+                    <div class="col-green">
+                        <ul>
+                            <h4>Prodotto</h4>
+                            <li>Scarica</li>
+                            <li>Perchè Discord</li>
+                            <li>Nitro</li>
+                            <li>Sicurezza</li>
+                            <li>Assistenza</li>
+                        </ul>
+                    </div>
+                    <div class="col-green">
+                        <ul>
+                            <h4>Compagnia</h4>
+                            <li>Ci siamo</li>
+                            <li>Lavora con noi</li>
+                            <li>Marchio</li>
+                            <li>Redazione</li>
+                            <li>Negozio</li>
+                        </ul>
+                    </div>
+                    <div class="col-green">
+                        <ul>
+                            <h4>Risorse</h4>
+                            <li>Scarica</li>
+                            <li>Perchè Discord</li>
+                            <li>Nitro</li>
+                            <li>Sicurezza</li>
+                            <li>Assistenza</li>
+                            <li>Scarica</li>
+                            <li>Perchè Discord</li>
+                            <li>Nitro</li>
+                            <li>Sicurezza</li>
+                            <li>Assistenza</li>
+                        </ul>
+                    </div>
+                    <div class="col-green">
+                        <ul>
+                            <h4>Norme</h4>
+                            <li>Scarica</li>
+                            <li>Perchè Discord</li>
+                            <li>Nitro</li>
+                            <li>Sicurezza</li>
+                            <li>Assistenza</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- Colonne -->
@@ -138,9 +201,9 @@
         <!-- Prima sezione footer -->
         <!-- Seconda sezione footer -->
         <section class="box-footer">
-            <div class="footer-due contenitore-footer-due debug">
-                <div class="stile debug">Logo</div>
-                <button class="stile debug">Bottone</button>
+            <div class="footer-due contenitore-footer-due">
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <a href="" class="button-link blue">Registrati</a>
             </div>
         </section>
         <!-- Seconda sezione footer -->

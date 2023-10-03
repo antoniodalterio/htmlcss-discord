@@ -37,44 +37,13 @@ COLOR
 *********
 */
 
-:root {
-    --headtop-color: var(--headtop-color) #255ee9;
-}
+
 
 /* 
 *********
 DEBUG
 *********
 */
-
-.header-top {
-    max-width: 1250px;
-}
-
-footer.debug {
-    background-color: #23272a;
-}
-
-.red-box.debug {
-    min-height: 600px;
-    background-color: #f08080;
-    border: 2px dashed black;
-}
-
-.green-box.debug {
-    background-color: #20b2aa;
-}
-
-
-.stile.debug {
-    padding: 10px;
-    background-color: #ffb6c1;
-    border: 2px dashed black;
-}
-
-.footer-due.debug {
-    background-color: #7fffd4;
-}
 
 /* 
 *********
@@ -84,7 +53,9 @@ COMMON
 h1,
 h2,
 h3,
+h4,
 p,
+li,
 a {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -95,11 +66,6 @@ section {
 
 a.nav {
     color: white;
-}
-
-.login,
-.logo {
-    flex-shrink: 1;
 }
 
 .container-menu {
@@ -125,8 +91,6 @@ a.nav {
     color: white;
 }
 
-
-
 .container-one,
 .container-two {
     display: flex;
@@ -143,8 +107,24 @@ a.nav {
     line-height: 25px;
 }
 
-.container-two {
-    /* flex-direction: row-reverse; */
+ul h3,
+h4 {
+    font-size: 30px;
+    color: #7289da;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.green-box ul {
+    padding-top: 50px;
+}
+
+.green-box li {
+    margin: 10px 0px;
+    color: white;
 
 }
 
@@ -294,6 +274,7 @@ h3 {
 a.blue {
     background-color: #7289da;
     color: white;
+
 }
 
 /* 
@@ -302,13 +283,12 @@ SEZIONE FOOTER
 ****************
 */
 
-.container-footer {
-    display: flex;
+footer {
+    background-color: #23272a;
 }
 
-.sezione-footer {
-    border-bottom: 1px solid white;
-    padding: 10px 0px 50px;
+.container-footer {
+    display: flex;
 }
 
 .box-footer {
@@ -318,16 +298,39 @@ SEZIONE FOOTER
 
 
 .red-box {
+    max-width: 30%;
     flex-grow: 1;
+}
+
+.lingua::after {
+    content: "\02C5";
+    margin-left: 5px;
+}
+
+.lingua,
+.lingua::after {
+    font-size: 15px;
+    color: white;
+}
+
+#lingua {
+    width: 15px;
+    margin-right: 5px;
+}
+
+i {
+    font-size: 15px;
+    color: white;
+    margin: 5px;
 }
 
 .green-box {
     display: flex;
-    flex-grow: 2;
+    max-width: 70%;
+    flex-grow: 1;
 }
 
 .col-green {
-    border: 2px dashed white;
     flex-grow: 1;
 }
 
@@ -352,4 +355,5 @@ SEZIONE FOOTER 2
     max-width: 1250px;
     margin: 0px auto;
     padding: 15px 0;
+    border-top: 2px solid #7289da;
 }
