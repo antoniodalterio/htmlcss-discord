@@ -86,6 +86,15 @@ a.nav {
     color: #23272a;
 }
 
+.button-link:hover {
+    box-shadow: 5px 5px 20px black;
+    color: #255ee9;
+}
+
+a:hover {
+    color: #7289da;
+}
+
 .black {
     background-color: #23272a;
     color: white;
@@ -222,6 +231,7 @@ SEZIONE 1
 SEZIONE 2
 *********
 */
+
 h2 {
     font-size: 35px;
 }
