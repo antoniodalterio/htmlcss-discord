@@ -37,7 +37,14 @@ COLOR
 *********
 */
 
-
+:root {
+    --bg-topbar: #255ee9;
+    --font-color: white;
+    --button-bg: white;
+    --section-bg: #d3d3d3;
+    --foot-bg: #23272a;
+    --h4-color: #7289da;
+}
 
 /* 
 *********
@@ -65,7 +72,7 @@ section {
 }
 
 a.nav {
-    color: white;
+    color: var(--font-color);
 }
 
 .container-menu {
@@ -81,23 +88,23 @@ a.nav {
 
 .button-link {
     padding: 7px 10px;
-    background-color: white;
+    background-color: var(--button-bg);
     border-radius: 20px;
-    color: #23272a;
+    color: var(--foot-bg);
 }
 
 .button-link:hover {
     box-shadow: 5px 5px 20px black;
-    color: #255ee9;
+    color: var(--bg-topbar);
 }
 
 a:hover {
-    color: #7289da;
+    color: var(--h4-color)
 }
 
 .black {
-    background-color: #23272a;
-    color: white;
+    background-color: var(--foot-bg);
+    color: var(--font-color);
 }
 
 .container-one,
@@ -119,7 +126,7 @@ a:hover {
 ul h3,
 h4 {
     font-size: 30px;
-    color: #7289da;
+    color: var(--h4-color);
     margin-bottom: 10px;
 }
 
@@ -133,7 +140,7 @@ h4 {
 
 .green-box li {
     margin: 10px 0px;
-    color: white;
+    color: var(--font-color);
 
 }
 
@@ -144,7 +151,7 @@ HEADER-Top
 */
 
 header {
-    background-color: #255ee9;
+    background-color: var(--bg-topbar);
     padding-top: 15px;
 
 }
@@ -190,14 +197,14 @@ HEADER-BOTTOM
 
 header .box p {
     margin-top: 20px;
-    color: white;
+    color: var(--font-color);
     line-height: 25px;
     margin-bottom: 20px;
 }
 
 
 h1 {
-    color: white;
+    color: var(--font-color);
     font-size: 40px;
 }
 
@@ -247,7 +254,7 @@ h2 {
 }
 
 .sezione-2 {
-    background-color: #d3d3d3;
+    background-color: var(--section-bg);
 }
 
 .img-2 {
@@ -282,8 +289,8 @@ h3 {
 }
 
 a.blue {
-    background-color: #7289da;
-    color: white;
+    background-color: var(--h4-color);
+    color: var(--font-color);
 
 }
 
@@ -294,7 +301,7 @@ SEZIONE FOOTER
 */
 
 footer {
-    background-color: #23272a;
+    background-color: var(--foot-bg);
 }
 
 .container-footer {
@@ -320,7 +327,7 @@ footer {
 .lingua,
 .lingua::after {
     font-size: 15px;
-    color: white;
+    color: var(--font-color);
 }
 
 #lingua {
@@ -330,7 +337,7 @@ footer {
 
 i {
     font-size: 15px;
-    color: white;
+    color: var(--font-color);
     margin: 5px;
 }
 
@@ -365,5 +372,5 @@ SEZIONE FOOTER 2
     max-width: 1250px;
     margin: 0px auto;
     padding: 15px 0;
-    border-top: 2px solid #7289da;
+    border-top: 2px solid var(--h4-color);
 }
